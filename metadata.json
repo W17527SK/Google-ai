@@ -1,0 +1,6 @@
+{
+  "name": "Delivery Grow",
+  "description": "Uma agência dedicada a escalar deliveries e negócios locais com tráfego pago, automação de IA e estratégia de crescimento.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

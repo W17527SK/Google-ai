@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+
+  --color-brand-bege: #F5EFE6;
+  --color-brand-bege-md: #E8DCCB;
+  --color-brand-dourado: #C8A96A;
+  --color-brand-dourado-forte: #A67C3B;
+  --color-brand-marrom: #3B2A1A;
+  --color-brand-marrom-md: #6B4F2A;
+  --color-brand-preto: #1A1A1A;
+  --color-brand-offwhite: #FDFAF6;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-brand-bege text-brand-preto font-sans leading-relaxed;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
