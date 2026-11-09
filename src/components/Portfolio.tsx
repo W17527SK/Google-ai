@@ -46,10 +46,9 @@ const categories = ["Todos", "Saúde & Estilo", "Equipamentos & B2B"];
 
 interface PortfolioProps {
   onBackToHome: () => void;
-  onNavigateToHiggs?: () => void;
 }
 
-export default function Portfolio({ onBackToHome, onNavigateToHiggs }: PortfolioProps) {
+export default function Portfolio({ onBackToHome }: PortfolioProps) {
   const [selectedCategory, setSelectedCategory] = useState("Todos");
 
   const filteredProjects = selectedCategory === "Todos"
@@ -203,39 +202,6 @@ export default function Portfolio({ onBackToHome, onNavigateToHiggs }: Portfolio
             ))}
           </AnimatePresence>
         </motion.div>
-
-        {/* Exclusive Higgs OS Banner in Portfolio */}
-        {onNavigateToHiggs && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="mt-16 bg-[#161310] text-[#E8DCCB] rounded-2xl p-8 sm:p-10 border border-[#C8A96A]/40 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl"
-          >
-            <div className="max-w-2xl">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="bg-[#C8A96A] text-[#141210] text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded">
-                  Tecnologia Proprietária
-                </span>
-                <span className="text-xs text-[#C8A96A] font-mono">
-                  SaaS Industrial & Multi-LLM
-                </span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-2">
-                Higgs OS — Plataforma de Orquestração de IA
-              </h3>
-              <p className="text-sm text-[#E8DCCB]/80 font-light leading-relaxed">
-                Conheça nossa arquitetura enterprise com Protocolo de Emaranhamento para execução paralela assíncrona de múltiplos modelos de linguagem em tempo real.
-              </p>
-            </div>
-
-            <button
-              onClick={onNavigateToHiggs}
-              className="shrink-0 bg-[#C8A96A] text-[#141210] hover:bg-[#A67C3B] hover:text-white font-bold text-sm px-7 py-4 rounded-sm transition-all cursor-pointer shadow-lg"
-            >
-              Ver Projeto Higgs →
-            </button>
-          </motion.div>
-        )}
 
         {/* CTA Banner inside Portfolio */}
         <motion.div 

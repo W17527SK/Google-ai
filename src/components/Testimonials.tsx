@@ -6,7 +6,7 @@ const testimonials = [
     initials: "RC",
     name: "Ricardo C.",
     business: "Clínica estética — SP",
-    quote: "Tentei fazer tráfego sozinho por 8 meses sem resultado. Em 45 dias com a Delivery Grow, o custo por lead caiu 60% e as vendas triplicaram. O diagnóstico inicial foi o que mudou tudo."
+    quote: "Tentei fazer tráfego sozinho por 8 meses sem resultado. Em 45 dias com o Pedro H. Souza, o custo por lead caiu 60% e as vendas triplicaram. O diagnóstico inicial foi o que mudou tudo."
   },
   {
     initials: "AM",

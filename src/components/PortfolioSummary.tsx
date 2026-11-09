@@ -3,10 +3,9 @@ import { Sparkles, ArrowRight, Layers } from "lucide-react";
 
 interface PortfolioSummaryProps {
   onViewAllCases: () => void;
-  onViewHiggs?: () => void;
 }
 
-export default function PortfolioSummary({ onViewAllCases, onViewHiggs }: PortfolioSummaryProps) {
+export default function PortfolioSummary({ onViewAllCases }: PortfolioSummaryProps) {
   const highlights = [
     {
       title: "Joolt Bike Indoor",
@@ -85,7 +84,7 @@ export default function PortfolioSummary({ onViewAllCases, onViewHiggs }: Portfo
           ))}
         </div>
 
-        {/* Global Redirect CTA Button & Higgs Spotlight */}
+        {/* Global Redirect CTA Button */}
         <div className="flex flex-col items-center gap-10 mt-16">
           <motion.button 
             whileHover={{ scale: 1.05 }}
@@ -95,40 +94,6 @@ export default function PortfolioSummary({ onViewAllCases, onViewHiggs }: Portfo
           >
             Acessar aba de Cases Completos <Layers size={18} />
           </motion.button>
-
-          {/* Higgs OS Spotlight Card */}
-          {onViewHiggs && (
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="w-full max-w-4xl bg-[#1A1612] text-[#E8DCCB] p-8 md:p-10 rounded-2xl border border-[#C8A96A]/30 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6"
-            >
-              <div className="max-w-xl">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="bg-[#C8A96A] text-[#141210] text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded">
-                    Destaque Autoral
-                  </span>
-                  <span className="text-xs text-[#C8A96A] font-mono">
-                    SaaS Industrial & Orquestração de IA
-                  </span>
-                </div>
-                <h3 className="text-2xl font-serif font-bold text-white mb-2">
-                  Higgs OS: Orquestrador Neural de Multi-LLMs
-                </h3>
-                <p className="text-xs md:text-sm text-[#E8DCCB]/80 leading-relaxed font-light">
-                  Plataforma com Protocolo de Emaranhamento exclusivo, execução paralela assíncrona e integração WhatsApp Cloud API desenvolvida sob Co-Criação Simbiótica.
-                </p>
-              </div>
-
-              <button
-                onClick={onViewHiggs}
-                className="shrink-0 bg-[#C8A96A] text-[#141210] hover:bg-[#A67C3B] hover:text-white font-bold text-sm px-6 py-3.5 rounded-sm transition-all flex items-center gap-2 shadow-lg cursor-pointer"
-              >
-                Explorar Higgs OS <ArrowRight size={15} />
-              </button>
-            </motion.div>
-          )}
         </div>
 
       </div>

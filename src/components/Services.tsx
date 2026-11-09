@@ -4,39 +4,39 @@ import { Target, Cpu, Layout, Link2, BarChart3, Compass } from "lucide-react";
 const services = [
   {
     icon: <Target size={24} />,
-    title: "Gestão de Tráfego",
-    description: "Meta Ads e Google Ads gerenciados com foco em ROI. Criamos, testamos e otimizamos campanhas continuamente para gerar o menor custo por resultado.",
-    tags: ["Meta", "Google", "ROI"]
+    title: "Gestão de Anúncios",
+    description: "Meta Ads (Instagram e Facebook) e Google Ads gerenciados com foco em vendas. Criamos, testamos e otimizamos anúncios para gerar o menor custo por cliente.",
+    tags: ["Meta Ads", "Google Ads", "Vendas"]
   },
   {
     icon: <Cpu size={24} />,
-    title: "IA Aplicada ao Negócio",
-    description: "Usamos IA na nossa operação e implementamos nos processos do cliente: atendimento automatizado, qualificação de leads e geração de conteúdo em escala.",
-    tags: ["Automação", "Escala", "Eficiência"]
+    title: "Automação com IA",
+    description: "Atendimento no WhatsApp automático, triagem rápida de contatos e criação ágil de materiais promocionais para economizar seu tempo.",
+    tags: ["WhatsApp", "Agilidade", "Automação"]
   },
   {
     icon: <Layout size={24} />,
-    title: "Landing Pages",
-    description: "Páginas de alta conversão criadas com estratégia, design premium e trackeamento completo integrado — como esta que você está lendo agora.",
-    tags: ["Conversão", "Mobile First"]
+    title: "Páginas que Vendem",
+    description: "Landing Pages profissionais, rápidas e persuasivas, feitas para apresentar seu produto com autoridade e levar o visitante direto para a compra.",
+    tags: ["Landing Page", "Celular & Web"]
   },
   {
     icon: <Link2 size={24} />,
-    title: "CRM & Fluxos de Nutrição",
-    description: "Estruturamos a jornada do seu lead do primeiro contato à recompra: fluxos de retenção, monetização e acompanhamento com trackeamento de cada etapa.",
-    tags: ["CRM", "Retenção", "LTV"]
+    title: "Acompanhamento de Leads",
+    description: "Organizamos os contatos do seu negócio do primeiro clique até o fechamento: mensagens automáticas de lembrete e recuperação de vendas.",
+    tags: ["WhatsApp", "Fechamento", "Recuperação"]
   },
   {
     icon: <BarChart3 size={24} />,
-    title: "Trackeamento Completo",
-    description: "Você sabe de onde vem cada venda. Configuramos Pixel, Google Tag, eventos de conversão e dashboards para você tomar decisões com dados reais.",
-    tags: ["Analytics", "Dados", "Decisão"]
+    title: "Métricas Transparentes",
+    description: "Você sabe exatamente de onde veio cada cliente e cada venda. Relatórios simples e diretos para você acompanhar o retorno do seu investimento.",
+    tags: ["Resultados", "Retorno", "Clareza"]
   },
   {
     icon: <Compass size={24} />,
-    title: "Consultoria Estratégica",
-    description: "Antes de qualquer ação, fazemos uma análise completa do seu negócio. Entregamos um diagnóstico honesto e um plano claro de onde e como crescer.",
-    tags: ["Diagnóstico", "Plano", "Clareza"]
+    title: "Diagnóstico Estratégico",
+    description: "Antes de gastar um centavo em anúncios, analisamos seu negócio, seus concorrentes e seu público para indicar o caminho mais lucrativo.",
+    tags: ["Planejamento", "Foco", "Direcionamento"]
   }
 ];
 

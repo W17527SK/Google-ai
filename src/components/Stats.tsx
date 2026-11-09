@@ -11,13 +11,13 @@ const stats = [
   { 
     value: "3.8×", 
     label: "ROI médio dos clientes",
-    detail: "Eficiência de capital",
+    detail: "Mais vendas com menos custo",
     icon: <TrendingUp size={18} className="text-[#C8A96A]" />
   },
   { 
     value: "R$ 3M+", 
     label: "Em vendas geradas",
-    detail: "Receita direta auditada",
+    detail: "Vendas reais de clientes",
     icon: <DollarSign size={18} className="text-[#C8A96A]" />
   },
   { 

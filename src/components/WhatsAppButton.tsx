@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
       animate={{ scale: 1, opacity: 1 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      href="https://wa.me/5511995539846?text=Olá%2C+gostaria+de+saber+mais+sobre+a+Delivery+Grow"
+      href="https://wa.me/5511995539846?text=Olá%2C+gostaria+de+saber+mais+sobre+o+trabalho+de+Pedro+H.+Souza"
       className="fixed bottom-8 right-8 z-[999] bg-[#25D366] text-white p-4 sm:p-5 rounded-full shadow-[0_4px_25px_rgba(37,211,102,0.4)] flex items-center justify-center hover:shadow-[0_6px_30px_rgba(37,211,102,0.6)] transition-all"
       title="Falar no WhatsApp"
     >

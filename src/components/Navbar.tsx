@@ -2,15 +2,15 @@ import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 
 interface NavbarProps {
-  currentTab: 'home' | 'portfolio' | 'personal-projects' | 'higgs';
-  setCurrentTab: (tab: 'home' | 'portfolio' | 'personal-projects' | 'higgs') => void;
+  currentTab: 'home' | 'portfolio';
+  setCurrentTab: (tab: 'home' | 'portfolio') => void;
 }
 
 export default function Navbar({ currentTab, setCurrentTab }: NavbarProps) {
   return (
     <nav className="bg-[#0F0D0B]/85 backdrop-blur-xl border-b border-[#241F1A] py-3.5 sticky top-0 z-50 transition-all">
       <div className="container mx-auto px-6 flex justify-between items-center">
-        {/* Brand Logo with Silicon Valley Elegance */}
+        {/* Brand Logo */}
         <div className="flex items-center gap-3">
           <motion.div 
             onClick={() => {
@@ -23,17 +23,14 @@ export default function Navbar({ currentTab, setCurrentTab }: NavbarProps) {
           >
             <div className="text-left">
               <div className="text-base sm:text-lg font-serif font-bold tracking-tight uppercase leading-none">
-                <span className="text-[#C8A96A]">DELIVERY</span> <span className="text-white">GROW</span>
+                <span className="text-[#C8A96A]">PEDRO</span> <span className="text-white">H. SOUZA</span>
               </div>
-              <span className="text-[9px] font-mono text-[#E8DCCB]/40 tracking-widest uppercase block mt-1">
-                Digital Marketing
-              </span>
             </div>
           </motion.div>
         </div>
         
         {/* Center & Right Navigation Links */}
-        <div className="flex items-center gap-3 sm:gap-6 md:gap-8">
+        <div className="flex items-center gap-4 sm:gap-8">
           <button
             onClick={() => {
               setCurrentTab('home');
@@ -70,32 +67,14 @@ export default function Navbar({ currentTab, setCurrentTab }: NavbarProps) {
             )}
           </button>
 
-          <button
-            onClick={() => {
-              setCurrentTab('personal-projects');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-            className={`text-xs sm:text-sm font-medium transition-colors uppercase tracking-wider relative py-1 cursor-pointer ${
-              currentTab === 'personal-projects' ? 'text-[#C8A96A] font-semibold' : 'text-[#E8DCCB]/80 hover:text-white'
-            }`}
-          >
-            <span>Projetos Pessoais</span>
-            {currentTab === 'personal-projects' && (
-              <motion.span 
-                layoutId="activeTabUnderline" 
-                className="absolute -bottom-1 left-0 right-0 h-[2px] bg-[#C8A96A]"
-              />
-            )}
-          </button>
-
           {/* Direct WhatsApp Consultation Button */}
           <a
             href="https://wa.me/5511995539846?text=Olá%2C+vi+o+portfólio+e+gostaria+de+conversar+sobre+um+projeto."
             target="_blank"
             rel="noreferrer"
-            className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-md bg-[#1C1814] border border-[#C8A96A]/40 text-[#C8A96A] hover:bg-[#C8A96A] hover:text-[#0F0D0B] text-xs font-semibold tracking-wide transition-all"
+            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-md bg-[#1C1814] border border-[#C8A96A]/40 text-[#C8A96A] hover:bg-[#C8A96A] hover:text-[#0F0D0B] text-xs font-semibold tracking-wide transition-all"
           >
-            <span>Agendar Sessão</span>
+            <span>Falar no WhatsApp</span>
             <ArrowUpRight size={13} />
           </a>
         </div>
